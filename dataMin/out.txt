@@ -1,0 +1,9 @@
+mean of Iris-virginica: [6.59, 2.97, 5.55, 2.03]
+stdDeviation of Iris-virginica: [0.14, 0.1, 0.0, 0.22]
+mean of Iris-setosa: [5.01, 3.42, 1.46, 0.24]
+stdDeviation of Iris-setosa: [0.22, 0.28, 0.14, 0.1]
+mean of Iris-versicolor: [5.94, 2.77, 4.26, 1.33]
+stdDeviation of Iris-versicolor: [0.22, 0.24, 0.24, 0.33]
+Prediction of randomly chosen single data point, should be: Iris-virginica
+Comparator Set: [0, 1, 0, 0]
+Iris-virginica
