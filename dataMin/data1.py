@@ -110,10 +110,18 @@ def predict(unknown):
 
         print ("Comparator Set: " + str(test))
         return (grt.index(max(grt)))
-        #print(i1)
-        
+
+
+
+#second predictor, utilizes how much difference by summing the compares
+def predictComp(unknown):
+        f0 = compare(unknown, mean(0))
+        f1 = compare(unknown, mean(1))
+        f2 = compare(unknown, mean(2))
+        sms = [sum(f0), sum(f1), sum(f2)]
+        return(sms.index(min(sms)))
               
-        #return test
+        
 
 def compare(set1, set2): #pass in two sets, returns how close they are as a positive float
         tmp = []
@@ -158,13 +166,16 @@ for line in s:
 
 #6.8,2.8,4.8,1.4,Iris-versicolor
 #6.8,3.2,5.9,2.3,Iris-virginica
+        
 for s in range(0,3):
+        print("\n")
         printThing(s, mean)
         printThing(s, stdDeviation)
         
 
-print("Prediction of randomly chosen single data point, should be: Iris-virginica")        
+print("\nPrediction of randomly chosen single data point, should be: Iris-virginica")        
 print(iris[predict([6.8,3.2,5.9,2.3])])
+print(iris[predictComp([6.8,3.2,5.9,2.3])])
 
 
 
